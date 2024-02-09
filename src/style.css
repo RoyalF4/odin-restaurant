@@ -1,0 +1,87 @@
+@font-face {
+    font-family: 'LifeCraft';
+    src: url('./lifecraft-font.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'Roboto';
+    src: url('./Roboto-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+body {
+    background-image: url('./stormwind.avif');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 100vh;
+    margin: 0;
+}
+
+h1,
+#logo,
+button {
+    font-family: 'Lifecraft', sans-serif;
+    letter-spacing: 3px;
+    color: #e0ae2d;
+}
+
+#logo {
+    font-size: 5rem;
+    height: 100px;
+}
+
+#logo,
+nav {
+    background: black;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 0 20px 0;
+}
+
+button {
+    width: 130px;
+    height: 50px;
+    background: none;
+    border: none;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+button:hover {
+    border-bottom: 3px solid white;
+    background: rgb(255, 255, 255, .2);
+}
+
+.home-container {
+    margin:  20px auto;
+    width: 1000px;
+    background: rgb(0, 0, 0, 0.5);
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.home-container > p {
+    width: 700px;
+    color: white;
+}
+
+
+
+.home-img {
+    width: 70%;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
