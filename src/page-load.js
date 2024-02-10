@@ -1,4 +1,4 @@
-import { homePage } from "./pages";
+import { homePage, locationPage, menuPage } from "./pages";
 
 
 function pageLoad() {

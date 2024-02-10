@@ -20,6 +20,14 @@
     }
 }
 
+.grow { 
+    transition: all .2s ease-in-out; 
+}
+    
+.grow:hover { 
+    transform: scale(1.1); 
+}
+
 
 body {
     background-image: url('./stormwind.avif');
@@ -29,11 +37,16 @@ body {
     margin: 0;
 }
 
+p {
+    margin: 0;
+}
+
 #content > div {
     animation: contentAnimation .5s ease-in forwards;
 }
 
 h1,
+h3,
 #logo,
 button {
     font-family: 'Lifecraft', sans-serif;
@@ -70,10 +83,16 @@ button:hover {
     background: rgb(255, 255, 255, .2);
 }
 
-.home-container {
-    margin:  20px auto;
+.home-container,
+.menu-container,
+.location-container {
     width: 1000px;
     background: rgb(0, 0, 0, 0.8);
+    margin: 20px auto;
+}
+
+.home-container {
+    margin:  20px auto;
     color: white;
     padding: 20px;
     display: flex;
@@ -84,13 +103,59 @@ button:hover {
 
 .home-container > p {
     width: 700px;
-    color: white;
+    color: #d9cbb3;
 }
-
-
 
 .home-img {
     width: 70%;
+}
+
+.menu-container {
+    display: grid;
+    grid-template-columns: repeat(2, 300px);
+    grid-template-rows: repeat(3, 200px);
+    gap: 50px;
+    justify-content: center;
+    padding: 40px 0;
+}
+
+.card {
+    background: rgb(27, 15, 15, .9);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.card:hover {
+    box-shadow: 0 0 10px #e0ae2d;
+}
+
+h3 {
+    -webkit-text-stroke: .5px black;
+}
+
+.card > p,
+.card > div {
+    color: #d9cbb3;
+    font-size: .9rem;
+}
+
+.card > div {
+    font-weight: bold;
+    color: silver;
+    flex: 1;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    font-size: 1.5rem;
+    
+}
+
+.location-container {
+    display: flex;
+    justify-content: center;
+    padding: 40px;
 }
 
 header {
